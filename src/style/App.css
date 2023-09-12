@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+  .my-container {
+    @apply md:max-w-[600px] mx-auto;
+  }
+}
+
+.section-hero-dark-mobile {
+  background-image: url(../images/bg-mobile-dark.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.section-hero-light-mobile {
+  background-image: url(../images/bg-mobile-light.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.dark {
+  background-color: hsl(236, 33%, 92%);
+}
+
+body {
+  background-color: hsl(235, 21%, 11%);
+  font-family: "Josefin Sans", sans-serif;
+}
+
+@media only screen and (min-width: 768px) {
+  .section-hero-dark-mobile {
+    background-image: url(../images/bg-desktop-dark.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .section-hero-light-mobile {
+    background-image: url(../images/bg-desktop-light.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
